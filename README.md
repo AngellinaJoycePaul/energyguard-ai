@@ -107,22 +107,26 @@ Alert System + Cascade Intelligence + TANGEDCO Report
 
 energyguard/
 ├── backend/
-│   ├── main.py          # FastAPI server — 5 endpoints
-│   ├── database.py      # SQLite schema setup
-│   └── energy.db        # Auto-created on first run
+│   ├── main.py          
+│   ├── database.py      
+│   └── energy.db        
 ├── ml/
-│   ├── ml_engine.py     # IsolationForest + rule-based detection
-│   ├── simulator.py     # Data generator — 4 devices
-│   └── ml_output.json   # Auto-created on run
+│   ├── ml_engine.py     
+│   ├── simulator.py     
+│   └── ml_output.json   
 ├── bridge/
-│   └── bridge.py        # Live loop — ML → DB → API
+│   └── bridge.py        
 └── frontend/
-└── src/
-├── App.jsx              # Main app — 5 page navigation
-├── ChatAssistant.jsx    # AI chat analyst
-├── CascadeIntelligence.jsx  # Cascade detection
-├── TangedcoReport.jsx   # TANGEDCO policy report
-└── HeatMap.jsx          # 24-hour anomaly heatmap
+    ├── public/
+    ├── src/
+    │   ├── App.jsx              
+    │   ├── ChatAssistant.jsx    
+    │   ├── CascadeIntelligence.jsx  
+    │   ├── TangedcoReport.jsx   
+    │   └── HeatMap.jsx          
+    ├── index.html
+    ├── package.json
+    └── vite.config.js
 
 ---
 
